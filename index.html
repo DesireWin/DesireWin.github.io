@@ -21,9 +21,9 @@ $vk = new vk_api(VK_KEY, VERSION);
 $data = json_decode(file_get_contents('php://input')); 
 
 
-//if ($data->type == 'confirmation') { 
-//    exit(ACCESS_KEY); 
-//}
+if ($data->type == 'confirmation') { 
+    exit(ACCESS_KEY); 
+}
 
 $vk->sendOK(); 
 // ====== Наши переменные ============
